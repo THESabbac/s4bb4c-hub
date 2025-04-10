@@ -1,25 +1,28 @@
 -- s4bb4c hub com abas
 -- Interface moderna e separada por jogos
 
--- UI Library simples (você pode trocar por outras tipo Rayfield, Kavo, etc)
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
+local CloseButton = Instance.new("TextButton")
 local TabButtons = Instance.new("Frame")
 local BloxFruitsBtn = Instance.new("TextButton")
 local OutrosJogosBtn = Instance.new("TextButton")
 local Pages = Instance.new("Frame")
-local BloxFruitsPage = Instance.new("Frame")
-local OutrosPage = Instance.new("Frame")
+local BloxFruitsPage = Instance.new("ScrollingFrame")
+local OutrosPage = Instance.new("ScrollingFrame")
 
 local function CreateScriptButton(parent, name, url)
     local btn = Instance.new("TextButton")
-    btn.Size = UDim2.new(0, 200, 0, 40)
+    btn.Size = UDim2.new(1, -20, 0, 40)
     btn.Text = name
     btn.Parent = parent
     btn.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
     btn.TextColor3 = Color3.fromRGB(255, 255, 255)
     btn.BorderSizePixel = 0
+    btn.Font = Enum.Font.Gotham
+    btn.TextSize = 16
+    btn.Position = UDim2.new(0, 10, 0, (#parent:GetChildren()-1) * 45)
     btn.MouseButton1Click:Connect(function()
         loadstring(game:HttpGet(url))()
     end)
@@ -45,6 +48,19 @@ Title.Parent = MainFrame
 Title.Font = Enum.Font.GothamBold
 Title.TextSize = 24
 Title.BorderSizePixel = 0
+
+CloseButton.Size = UDim2.new(0, 40, 0, 40)
+CloseButton.Position = UDim2.new(1, -45, 0, 5)
+CloseButton.Text = "X"
+CloseButton.Parent = MainFrame
+CloseButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.Font = Enum.Font.GothamBold
+CloseButton.TextSize = 20
+CloseButton.BorderSizePixel = 0
+CloseButton.MouseButton1Click:Connect(function()
+    ScreenGui:Destroy()
+end)
 
 TabButtons.Size = UDim2.new(1, 0, 0, 40)
 TabButtons.Position = UDim2.new(0, 0, 0, 50)
@@ -72,14 +88,26 @@ Pages.Parent = MainFrame
 Pages.BackgroundTransparency = 1
 
 BloxFruitsPage.Size = UDim2.new(1, 0, 1, 0)
+BloxFruitsPage.CanvasSize = UDim2.new(0, 0, 0, 500)
+BloxFruitsPage.ScrollBarThickness = 6
 BloxFruitsPage.Parent = Pages
 BloxFruitsPage.Visible = true
 BloxFruitsPage.BackgroundTransparency = 1
+BloxFruitsPage.BorderSizePixel = 0
+BloxFruitsPage.AutomaticCanvasSize = Enum.AutomaticSize.Y
+BloxFruitsPage.ClipsDescendants = true
+BloxFruitsPage.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
 
 OutrosPage.Size = UDim2.new(1, 0, 1, 0)
+OutrosPage.CanvasSize = UDim2.new(0, 0, 0, 500)
+OutrosPage.ScrollBarThickness = 6
 OutrosPage.Parent = Pages
 OutrosPage.Visible = false
 OutrosPage.BackgroundTransparency = 1
+OutrosPage.BorderSizePixel = 0
+OutrosPage.AutomaticCanvasSize = Enum.AutomaticSize.Y
+OutrosPage.ClipsDescendants = true
+OutrosPage.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
 
 -- Botões de scripts para Blox Fruits
 CreateScriptButton(BloxFruitsPage, "Script 1", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
