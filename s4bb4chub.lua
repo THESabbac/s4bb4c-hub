@@ -109,6 +109,17 @@ OutrosPage.AutomaticCanvasSize = Enum.AutomaticSize.Y
 OutrosPage.ClipsDescendants = true
 OutrosPage.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
 
+frederico.Size = UDim2.new(1, 0, 1, 0)
+frederico.CanvasSize = UDim2.new(0, 0, 0, 500)
+frederico.ScrollBarThickness = 6
+frederico.Parent = Pages
+frederico.Visible = false
+frederico.BackgroundTransparency = 1
+frederico.BorderSizePixel = 0
+frederico.AutomaticCanvasSize = Enum.AutomaticSize.Y
+frederico.ClipsDescendants = true
+frederico.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
+
 -- Botões de scripts para Blox Fruits
 CreateScriptButton(BloxFruitsPage, "Frederico", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
 CreateScriptButton(BloxFruitsPage, "O frederico", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
@@ -121,13 +132,18 @@ CreateScriptButton(BloxFruitsPage, "Script 34", "https://raw.githubusercontent.c
 CreateScriptButton(OutrosPage, "MM2 Auto Farm", "https://raw.githubusercontent.com/username/repo/main/mm2.lua")
 CreateScriptButton(OutrosPage, "Doors GUI", "https://raw.githubusercontent.com/username/repo/main/doorsgui.lua")
 
+CreateScriptButton(frederico, "MM2 Auto Farm", "https://raw.githubusercontent.com/username/repo/main/mm2.lua")
+CreateScriptButton(frederico, "Doors GUI", "https://raw.githubusercontent.com/username/repo/main/doorsgui.lua")
+
 -- Alternar entre abas
 BloxFruitsBtn.MouseButton1Click:Connect(function()
     BloxFruitsPage.Visible = true
     OutrosPage.Visible = false
+    frederico.Visible = false
 end)
 
 OutrosJogosBtn.MouseButton1Click:Connect(function()
     BloxFruitsPage.Visible = false
     OutrosPage.Visible = true
+    frederico.Visible = true
 end)
