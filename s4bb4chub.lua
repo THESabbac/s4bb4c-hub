@@ -111,7 +111,7 @@ OutrosPage.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
 
 -- Botões de scripts para Blox Fruits
 CreateScriptButton(BloxFruitsPage, "teste", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
-CreateScriptButton(BloxFruitsPage, "Script cuzi", "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua")
+CreateScriptButton(BloxFruitsPage, "cuzin", "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua")
 CreateScriptButton(BloxFruitsPage, "Script 3s", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
 CreateScriptButton(BloxFruitsPage, "Scriptas s3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
 CreateScriptButton(BloxFruitsPage, "Script x3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
