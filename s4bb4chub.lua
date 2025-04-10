@@ -75,7 +75,7 @@ ScriptsPage.ClipsDescendants = true
 ScriptsPage.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
 
 -- Botões de scripts unificados
-CreateScriptButton(ScriptsPage, "jorgin", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
+CreateScriptButton(ScriptsPage, "testando o sexo", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
 CreateScriptButton(ScriptsPage, "criadotj", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
 CreateScriptButton(ScriptsPage, "the fred", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
 CreateScriptButton(ScriptsPage, "Script x3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
