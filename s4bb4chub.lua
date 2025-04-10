@@ -76,10 +76,3 @@ ScriptsPage.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
 
 -- Botões de scripts unificados
 CreateScriptButton(ScriptsPage, "TCP", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
-CreateScriptButton(ScriptsPage, "D", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
-CreateScriptButton(ScriptsPage, "the fred", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
-CreateScriptButton(ScriptsPage, "Script x3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
-CreateScriptButton(ScriptsPage, "Script x3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
-CreateScriptButton(ScriptsPage, "Script 34", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
-CreateScriptButton(ScriptsPage, "MM2 Auto Farm", "https://raw.githubusercontent.com/username/repo/main/mm2.lua")
-CreateScriptButton(ScriptsPage, "Doors GUI", "https://raw.githubusercontent.com/username/repo/main/doorsgui.lua")
