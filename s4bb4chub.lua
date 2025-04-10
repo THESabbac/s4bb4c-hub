@@ -110,9 +110,13 @@ OutrosPage.ClipsDescendants = true
 OutrosPage.ScrollBarImageColor3 = Color3.fromRGB(100,100,100)
 
 -- Botões de scripts para Blox Fruits
-CreateScriptButton(BloxFruitsPage, "Script 1", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
-CreateScriptButton(BloxFruitsPage, "Script 2", "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua")
-CreateScriptButton(BloxFruitsPage, "Script 3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
+CreateScriptButton(BloxFruitsPage, "teste", "https://raw.githubusercontent.com/OhhMyGehlee/y/refs/heads/main/hj")
+CreateScriptButton(BloxFruitsPage, "Script 2s", "https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua")
+CreateScriptButton(BloxFruitsPage, "Script 3s", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
+CreateScriptButton(BloxFruitsPage, "Script s3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
+CreateScriptButton(BloxFruitsPage, "Script x3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
+CreateScriptButton(BloxFruitsPage, "Script x3", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
+CreateScriptButton(BloxFruitsPage, "Script 34", "https://raw.githubusercontent.com/ZhangJunZ84/twvz/refs/heads/main/arisecrossover.lua")
 
 -- Botões de scripts para outros jogos (exemplo)
 CreateScriptButton(OutrosPage, "MM2 Auto Farm", "https://raw.githubusercontent.com/username/repo/main/mm2.lua")
